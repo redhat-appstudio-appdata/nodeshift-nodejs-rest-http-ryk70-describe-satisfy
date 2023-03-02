@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-rest-http-bgpc
+  namespace: bgriggs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2933cd5089e321727bd07494be1aedb299412541f9cf4147c503aca773779940
+        name: my-nodejs
+        resources: {}
+status: {}
