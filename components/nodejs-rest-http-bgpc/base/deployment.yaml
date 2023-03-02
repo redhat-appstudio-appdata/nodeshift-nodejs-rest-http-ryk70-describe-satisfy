@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-rest-http-bgpc
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ryk70-nodejs-rest-http-bgpc
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2933cd5089e321727bd07494be1aedb299412541f9cf4147c503aca773779940
         name: my-nodejs
         ports:
         - containerPort: 3001
